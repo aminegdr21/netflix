@@ -425,7 +425,7 @@ const dummyMovies = [
                 <span className="text-[13px] font-medium mb-1">Step <b>2</b> of <b>3</b></span>
                 <h1 className="text-[32px] font-bold tracking-tight leading-[1.2] mb-4 text-[#333]">Account Created</h1>
                 <p className="text-[17px] mb-4 text-[#333]">Use this email to access your account:</p>
-                <p className="text-[17px] font-bold mb-8 text-[#333]">{emailFromHome}</p>
+                <p className="text-[17px] font-bold mb-8 text-[#333]">{email}</p>
                 <button onClick={() => goToStep(2)} className="bg-[#e50914] text-white w-full h-[64px] rounded-[3px] font-medium text-[24px] hover:bg-red-700 transition">Next</button>
               </div>
             )}
@@ -442,7 +442,7 @@ const dummyMovies = [
                 <div className="w-full text-left">
                   <span className="text-[13px] font-medium mb-1 text-[#333]">Step <b>2</b> of <b>4</b></span>
                   <h1 className="text-[32px] font-bold tracking-tight leading-tight mb-4 text-[#333]">Great, now let's verify your email</h1>
-                  <p className="text-[17px] mb-4 text-[#333]">Click the link we sent to <b>{emailFromHome || 'your email'}</b> to verify.</p>
+                  <p className="text-[17px] mb-4 text-[#333]">Click the link we sent to <b>{email || 'your email'}</b> to verify.</p>
                   <p className="text-[17px] mb-6 text-[#333]">Verifying your email will improve account security and help you receive important Netflix communications.</p>
                   <button onClick={() => goToStep(3)} className="bg-[#e6e6e6] text-black w-full h-[64px] rounded-[3px] font-bold text-[24px] hover:bg-gray-300 transition">Skip</button>
                 </div>
@@ -722,7 +722,7 @@ const dummyMovies = [
                   Welcome to Netflix!
                 </h1>
                 <p className="text-[17px] text-[#333] mb-4">
-                  You've started your membership and we emailed the details to <br/> <b>{emailFromHome || 'your email'}</b>.
+                  You've started your membership and we emailed the details to <br/> <b>{email || 'your email'}</b>.
                 </p>
                 <p className="text-[17px] text-[#333] mb-6">
                   Remember you can cancel anytime in the Account section.
